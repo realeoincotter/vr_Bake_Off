@@ -1231,6 +1231,67 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &848375430
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 848375432}
+  - component: {fileID: 848375431}
+  m_Layer: 0
+  m_Name: TrialManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &848375431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848375430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281b2c8e61384a7409b6cd1f746c2a3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrialManager
+  socket: {fileID: 0}
+  cubes:
+  - {fileID: 1407590004}
+  - {fileID: 499930542}
+  - {fileID: 1164814733}
+  - {fileID: 1389382070}
+  - {fileID: 1497560268}
+  - {fileID: 1355879698}
+  - {fileID: 1777326244}
+  - {fileID: 1017575402}
+  - {fileID: 315849010}
+  targetMaterial: {fileID: 2100000, guid: 4818e0aa10d95cc46b4065662f70e36a, type: 2}
+  distractorMaterial: {fileID: 2100000, guid: 53032f6f0eccab24490c98a5a4ac5a8a, type: 2}
+  endPanel: {fileID: 0}
+  variant: A
+  trialsPerBlock: 10
+  menuScene: MainMenu
+--- !u!4 &848375432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 848375430}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.13654, y: -0, z: 3.78502}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1017575401
 GameObject:
   m_ObjectHideFlags: 0
@@ -3171,7 +3232,7 @@ MonoBehaviour:
   m_InteractionLayers:
     m_Bits: 4294967295
   m_Handedness: 0
-  m_AttachTransform: {fileID: 0}
+  m_AttachTransform: {fileID: 180090107}
   m_KeepSelectedTargetValid: 1
   m_DisableVisualsWhenBlockedInGroup: 1
   m_StartingSelectedInteractable: {fileID: 0}
@@ -3198,7 +3259,7 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
-  m_HoverSocketSnapping: 0
+  m_HoverSocketSnapping: 1
   m_SocketSnappingRadius: 0.1
   m_SocketScaleMode: 0
   m_FixedScale: {x: 1, y: 1, z: 1}
@@ -3242,3 +3303,4 @@ SceneRoots:
   - {fileID: 1017575407}
   - {fileID: 315849015}
   - {fileID: 19267545}
+  - {fileID: 848375432}
